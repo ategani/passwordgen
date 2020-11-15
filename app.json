@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "password-gen",
-    "slug": "password-gen",
+    "name": "Simple Password Generator",
+    "slug": "passwordgenerator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#4C0000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
