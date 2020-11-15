@@ -102,6 +102,7 @@ const Home = () => {
           value={isLowerEnabled}
         />
       </View>
+
       <View style={styles.toggleContainer}>
         <Text style={styles.text}>Maiúsculas</Text>
         <Switch
@@ -112,6 +113,7 @@ const Home = () => {
           value={isUpperEnabled}
         />
       </View>
+
       <View style={styles.toggleContainer}>
         <Text style={styles.text}>Números</Text>
         <Switch
@@ -122,6 +124,7 @@ const Home = () => {
           value={isNumberEnabled}
         />
       </View>
+
       <View style={styles.toggleContainer}>
         <Text style={styles.text}>Símbolos</Text>
         <Switch
