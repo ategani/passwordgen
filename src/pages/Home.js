@@ -57,7 +57,7 @@ const Home = () => {
           <View style={styles.modalView}>
             <Text style={styles.modalText}>Senha copiada!</Text>
             <TouchableHighlight
-              style={{ ...styles.openButton, backgroundColor: '#2196F3' }}
+              style={{ ...styles.openButton, backgroundColor: 'green' }}
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}>
@@ -93,7 +93,7 @@ const Home = () => {
       </View>
 
       <View style={styles.toggleContainer}>
-        <Text style={styles.text}>Minúsculas</Text>
+        <Text style={styles.text}>Minúsculas     </Text>
         <Switch
           trackColor={{ false: '#767577', true: '#AE1B1F' }}
           thumbColor={isLowerEnabled ? '#f4f3f4' : '#f4f3f4'}
@@ -104,7 +104,7 @@ const Home = () => {
       </View>
 
       <View style={styles.toggleContainer}>
-        <Text style={styles.text}>Maiúsculas</Text>
+        <Text style={styles.text}>Maiúsculas     </Text>
         <Switch
           trackColor={{ false: '#767577', true: '#AE1B1F' }}
           thumbColor={isUpperEnabled ? '#f4f3f4' : '#f4f3f4'}
@@ -115,7 +115,7 @@ const Home = () => {
       </View>
 
       <View style={styles.toggleContainer}>
-        <Text style={styles.text}>Números</Text>
+        <Text style={styles.text}>Números        </Text>
         <Switch
           trackColor={{ false: '#767577', true: '#AE1B1F' }}
           thumbColor={isNumberEnabled ? '#f4f3f4' : '#f4f3f4'}
@@ -126,7 +126,7 @@ const Home = () => {
       </View>
 
       <View style={styles.toggleContainer}>
-        <Text style={styles.text}>Símbolos</Text>
+        <Text style={styles.text}>Símbolos       </Text>
         <Switch
           trackColor={{ false: '#767577', true: '#AE1B1F' }}
           thumbColor={isSymbolEnabled ? '#f4f3f4' : '#f4f3f4'}
@@ -170,7 +170,8 @@ const styles = StyleSheet.create({
     height: 100,
     padding: 5,
     marginTop: 10,
-    marginBottom: 10
+    marginBottom: 10,
+    borderRadius: 2
   },
 
   passwordText: {
@@ -218,8 +219,8 @@ const styles = StyleSheet.create({
   },
   modalView: {
     margin: 20,
-    backgroundColor: 'white',
-    borderRadius: 20,
+    backgroundColor: '#AE1B1F',
+    borderRadius: 2,
     padding: 35,
     alignItems: 'center',
     shadowColor: '#000',
@@ -233,7 +234,7 @@ const styles = StyleSheet.create({
   },
   openButton: {
     backgroundColor: '#F194FF',
-    borderRadius: 20,
+    borderRadius: 2,
     padding: 10,
     elevation: 2,
   },
@@ -243,6 +244,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   modalText: {
+    fontSize: 20,
+    color: 'white',
     marginBottom: 15,
     textAlign: 'center',
   },
