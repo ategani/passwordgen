@@ -8,7 +8,7 @@ import { LogBox } from 'react-native';
 
 import Routes from './src/Routes';
 
-//LogBox.ignoreAllLogs()
+LogBox.ignoreAllLogs()
 
 const App = () => {
   return (
